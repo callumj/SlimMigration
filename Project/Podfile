@@ -1,7 +1,1 @@
 pod "SlimMigration", :path => "../SlimMigration.podspec"
-
-target "Demo" do
-end
-
-target "DemoTests" do
-end

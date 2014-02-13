@@ -7,31 +7,21 @@
 Pod::Spec.new do |s|
   s.name             = "SlimMigration"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SlimMigration."
+  s.summary          = "Generate migration steps for simple SQLite backed databases."
   s.description      = <<-DESC
-                       An optional longer description of SlimMigration
+                       SlimMigration generates SQL statements neccessary for migrating your database to an acceptable level.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Designed to work with simple ORMs SlimMigration takes versioning information and spits out all the statements you require to migrate your database upwards.
+                       By writing SlimMigration backed classes each class can specify migration tasks such as adding table, removing tables, columns etc.
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/callumj/SlimMigration"
   s.license          = 'MIT'
-  s.author           = { "Callum Jones" => "callum@callumj.com" }
+  s.author           = { "Callum Jones" => "contact@callumj.com" }
   s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/NAME'
+  s.social_media_url = 'https://twitter.com/callumj'
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
+  s.source_files = 'Classes/*.{h,m}'
   s.resources = 'Assets'
-
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
 end

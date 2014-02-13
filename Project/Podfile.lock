@@ -1,0 +1,14 @@
+PODS:
+  - SlimMigration (0.1.0)
+
+DEPENDENCIES:
+  - SlimMigration (from `../SlimMigration.podspec`)
+
+EXTERNAL SOURCES:
+  SlimMigration:
+    :path: ../SlimMigration.podspec
+
+SPEC CHECKSUMS:
+  SlimMigration: 9b3902bc300e4910eb68d241ee8151d535612ea7
+
+COCOAPODS: 0.29.0
